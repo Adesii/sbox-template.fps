@@ -1,6 +1,5 @@
-using Sandbox;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class Aim : WeaponComponent, ISingletonComponent
 {

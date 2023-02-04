@@ -1,9 +1,6 @@
-using Facepunch.Gunfight.Mechanics;
-using Sandbox;
-using System.Collections.Generic;
-using System.Linq;
+using MyProject.Mechanics;
 
-namespace Facepunch.Gunfight;
+namespace MyProject;
 
 public partial class PlayerController : EntityComponent<Player>, ISingletonComponent
 {

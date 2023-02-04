@@ -1,6 +1,5 @@
-using Sandbox;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class Ammo : WeaponComponent, ISingletonComponent
 {
@@ -13,7 +12,7 @@ public partial class Ammo : WeaponComponent, ISingletonComponent
 
 	public bool IsFull
 	{
-		get => AmmoCount >= ( Data.AllowChamber ? Data.MaximumAmmo + 1 : Data.MaximumAmmo ); 
+		get => AmmoCount >= (Data.AllowChamber ? Data.MaximumAmmo + 1 : Data.MaximumAmmo);
 	}
 
 	public override void Initialize( Weapon weapon )

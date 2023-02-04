@@ -1,9 +1,7 @@
-using Facepunch.Gunfight.Mechanics;
-using Sandbox;
-using System;
+using MyProject.Mechanics;
 using static Sandbox.Package;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class WeaponViewModel
 {

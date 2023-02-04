@@ -1,7 +1,5 @@
-using Sandbox;
-using System;
 
-namespace Facepunch.Gunfight;
+namespace MyProject;
 
 public partial class PlayerAnimator : EntityComponent<Player>, ISingletonComponent
 {

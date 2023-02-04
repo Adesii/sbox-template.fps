@@ -1,7 +1,5 @@
-using Sandbox;
-using System.Collections.Generic;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 [GameResource( "Weapon", "weapon", "A data asset for a weapon.",
 	Icon = "track_changes", IconBgColor = "#4953a7", IconFgColor = "#2a3060" )]

@@ -1,7 +1,5 @@
-using Sandbox;
-using System.Diagnostics;
 
-namespace Facepunch.Gunfight.Mechanics;
+namespace MyProject.Mechanics;
 
 /// <summary>
 /// The basic walking mechanic for the player.
@@ -157,7 +155,7 @@ public partial class WalkMechanic : PlayerControllerMechanic
 			ClearGroundEntity();
 			return;
 		}
-		
+
 		var pm = Controller.TraceBBox( vBumpOrigin, point, 4.0f );
 
 		var angle = Vector3.GetAngle( Vector3.Up, pm.Normal );

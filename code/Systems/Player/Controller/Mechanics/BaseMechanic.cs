@@ -1,10 +1,6 @@
-using Facepunch.Gunfight.WeaponSystem;
-using Sandbox;
-using System;
-using System.ComponentModel;
-using System.Dynamic;
+using MyProject.WeaponSystem;
 
-namespace Facepunch.Gunfight.Mechanics;
+namespace MyProject.Mechanics;
 
 public partial class PlayerControllerMechanic : EntityComponent<Player>
 {

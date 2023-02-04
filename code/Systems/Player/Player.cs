@@ -1,9 +1,7 @@
-using Facepunch.Gunfight.Mechanics;
-using Facepunch.Gunfight.WeaponSystem;
-using Sandbox;
-using System.Linq;
+using MyProject.Mechanics;
+using MyProject.WeaponSystem;
 
-namespace Facepunch.Gunfight;
+namespace MyProject;
 
 public partial class Player : AnimatedEntity
 {

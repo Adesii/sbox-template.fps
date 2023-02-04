@@ -1,8 +1,6 @@
-using Facepunch.Gunfight.WeaponSystem;
-using Sandbox;
-using System;
+using MyProject.WeaponSystem;
 
-namespace Facepunch.Gunfight.Mechanics;
+namespace MyProject.Mechanics;
 
 /// <summary>
 /// The basic sprinting mechanic for players.

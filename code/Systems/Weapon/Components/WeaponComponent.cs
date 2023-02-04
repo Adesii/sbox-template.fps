@@ -1,7 +1,5 @@
-using Sandbox;
-using System;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class WeaponComponent : EntityComponent<Weapon>
 {
