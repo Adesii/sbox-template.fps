@@ -1,8 +1,8 @@
 {
-  "Title": "FPS Sample",
+  "Title": "FPS Template",
   "Type": "game",
-  "Org": "devultj",
-  "Ident": "template_fps",
+  "Org": "local",
+  "Ident": "game.fps",
   "Tags": "",
   "Schema": 1,
   "HasAssets": true,
@@ -69,6 +69,10 @@
           "r": "Trigger"
         }
       ]
+    },
+    "ProjectTemplate": {
+      "Icon": "directions_walk",
+      "Order": -12
     }
   }
 }
