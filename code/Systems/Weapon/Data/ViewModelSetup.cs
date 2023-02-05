@@ -1,4 +1,4 @@
-namespace Facepunch.Gunfight;
+namespace MyProject;
 
 public struct ViewModelData
 {

@@ -1,6 +1,6 @@
-using Facepunch.Gunfight;
-using Sandbox;
-using Sandbox.UI;
+using MyProject.UI;
+
+namespace MyProject;
 
 public partial class Hud : HudEntity<RootPanel>
 {

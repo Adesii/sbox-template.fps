@@ -1,4 +1,4 @@
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public enum HoldType
 {

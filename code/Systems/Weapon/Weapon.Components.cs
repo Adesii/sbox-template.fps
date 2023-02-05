@@ -1,7 +1,5 @@
-using Sandbox;
-using System.Linq;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class Weapon
 {
@@ -40,7 +38,7 @@ public partial class Weapon
 
 	public override void BuildInput()
 	{
-		foreach( var component in Components.GetAll<WeaponComponent>() )
+		foreach ( var component in Components.GetAll<WeaponComponent>() )
 		{
 			component.BuildInput();
 		}

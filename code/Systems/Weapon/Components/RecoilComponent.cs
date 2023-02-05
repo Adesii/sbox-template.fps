@@ -1,7 +1,5 @@
-using Sandbox;
-using System.Collections.Generic;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class Recoil : WeaponComponent, ISingletonComponent
 {

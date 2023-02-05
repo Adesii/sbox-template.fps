@@ -1,8 +1,6 @@
-@using Sandbox;
-@using System;
-@using Facepunch.Gunfight.WeaponSystem;
+@using MyProject.WeaponSystem;
 
-@namespace Facepunch.Gunfight
+@namespace MyProject
 
 <style>
     Info {
@@ -19,7 +17,7 @@
             align-items: center;
             align-content: stretch;
 
-            text-shadow: 2px 2px 5px rgba( black, 0.3 );
+            text-shadow: 2px 2px 5px rgba(black, 0.3);
         }
 
         .icon {
@@ -44,12 +42,12 @@
 </style>
 
 <root>
-    @if ( AmmoComponent != null )
+    @if (AmmoComponent != null)
     {
         <div class="row">
             <label class="text @AmmoClasses()">@AmmoComponent.AmmoCount.Clamp( 0, AmmoComponent.Data.MaximumAmmo )</label>
 
-            @if ( AmmoComponent.AmmoCount > AmmoComponent.Data.MaximumAmmo )
+            @if (AmmoComponent.AmmoCount > AmmoComponent.Data.MaximumAmmo)
             {
                 <label class="text">+ @(AmmoComponent.AmmoCount - AmmoComponent.Data.MaximumAmmo)</label>
             }
@@ -66,7 +64,7 @@
     </div>
 </root>
 
-@code 
+@code
 {
     public string Health => $"{Player.Health:F0}";
     public Player Player => Game.LocalPawn as Player;
@@ -75,7 +73,7 @@
 
     protected override int BuildHash()
     {
-        return HashCode.Combine( AmmoComponent?.AmmoCount, Player?.Health );
+        return HashCode.Combine(AmmoComponent?.AmmoCount, Player?.Health);
     }
 
     protected string HealthClasses()
@@ -85,6 +83,6 @@
 
     protected string AmmoClasses()
     {
-        return ( (float)AmmoComponent.AmmoCount / (float)AmmoComponent.Data.MaximumAmmo ) < 0.25f ? "low" : "";
+        return ((float)AmmoComponent.AmmoCount / (float)AmmoComponent.Data.MaximumAmmo) < 0.25f ? "low" : "";
     }
 }

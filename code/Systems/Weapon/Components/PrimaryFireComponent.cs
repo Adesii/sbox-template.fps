@@ -1,8 +1,6 @@
-using Facepunch.Gunfight.Mechanics;
-using Sandbox;
-using System.Collections.Generic;
+using MyProject.Mechanics;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class PrimaryFire : WeaponComponent, ISingletonComponent
 {
@@ -15,7 +13,7 @@ public partial class PrimaryFire : WeaponComponent, ISingletonComponent
 		if ( !Input.Down( InputButton.PrimaryAttack ) ) return false;
 		if ( Weapon.Tags.Has( "reloading" ) ) return false;
 		// Optional
-		if ( GetComponent<Ammo>() is Ammo ammo && !ammo.HasEnoughAmmo() ) return false; 
+		if ( GetComponent<Ammo>() is Ammo ammo && !ammo.HasEnoughAmmo() ) return false;
 
 		return TimeSinceActivated > Data.FireDelay;
 	}

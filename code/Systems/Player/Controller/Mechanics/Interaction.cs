@@ -1,6 +1,5 @@
-using Sandbox;
 
-namespace Facepunch.Gunfight.Mechanics;
+namespace MyProject.Mechanics;
 
 public interface IInteractable
 {

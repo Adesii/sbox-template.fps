@@ -1,7 +1,5 @@
-using Sandbox;
-using System.ComponentModel;
 
-namespace Facepunch.Gunfight;
+namespace MyProject;
 
 public partial class Player
 {

@@ -1,7 +1,5 @@
-using System.Collections.Generic;
-using System.Linq;
 
-namespace Facepunch.Gunfight.WeaponSystem;
+namespace MyProject.WeaponSystem;
 
 public partial class WeaponData
 {
